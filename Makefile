@@ -10,6 +10,10 @@ docs-check:
 	@test -d paperclip -o -d hermes -o -d ce-gates -o -d blueprints -o -d personas
 	@echo 'docs-check ok'
 
+# Fail only on high-entropy secret shapes, not docs that mention the audit patterns.
 smoke: docs-check
-	@rg -n 'ghp_|xoxb-|sk-|OPENROUTER|board\.key|BEGIN (RSA|OPENSSH) PRIVATE' --glob '!.git/**' && exit 1 || true
-	@echo 'aspen-dev smoke ok'
+	@if rg -n --glob '!.git/**' -e 'ghp_[A-Za-z0-9]{20,}' -e 'xoxb-[0-9]{8,}' -e 'sk-[A-Za-z0-9]{20,}' -e 'BEGIN (RSA|OPENSSH) PRIVATE KEY' . ; then \
+	  echo 'secret-shaped token found'; exit 1; \
+	else \
+	  echo 'aspen-dev smoke ok'; \
+	fi
