@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "name": "BellahTech",
+  "issuePrefix": "BTH",
+  "description": "Holding company and local-first company OS for BellahTech ventures. Existing operating companies (Aspen OS Development, Absolution Digital Commerce, Bellah Content Studio, Absolution Studios) remain live and map to projects under this holding. Current Paperclip agents stay. Conversation faces: Aspen, Ergo, Proxy, Trance, Romi. Linear team BEL is the work SoR.",
+  "requireBoardApprovalForNewAgents": true,
+  "agents": [
+    {
+      "name": "Aspen",
+      "role": "ceo",
+      "title": "CEO / Build & Ventures",
+      "adapterType": "hermes_local",
+      "capabilities": null,
+      "reportsTo": null
+    },
+    {
+      "name": "Aider",
+      "role": "engineer",
+      "title": "Aider coding worker",
+      "adapterType": "process",
+      "capabilities": null,
+      "reportsTo": "Aspen"
+    },
+    {
+      "name": "Ergo",
+      "role": "devops",
+      "title": "Systems / Orchestration",
+      "adapterType": "hermes_local",
+      "capabilities": null,
+      "reportsTo": "Aspen"
+    },
+    {
+      "name": "OpenCode",
+      "role": "engineer",
+      "title": "Implementation engineer",
+      "adapterType": "opencode_local",
+      "capabilities": null,
+      "reportsTo": "Aspen"
+    },
+    {
+      "name": "Proxy",
+      "role": "engineer",
+      "title": "Security + Implementation",
+      "adapterType": "hermes_local",
+      "capabilities": null,
+      "reportsTo": "Aspen"
+    },
+    {
+      "name": "Romi",
+      "role": "general",
+      "title": "Personal assistant + Chief of Staff",
+      "adapterType": "hermes_local",
+      "capabilities": null,
+      "reportsTo": "Aspen"
+    },
+    {
+      "name": "Trance",
+      "role": "designer",
+      "title": "Diplomacy + Creative",
+      "adapterType": "hermes_local",
+      "capabilities": null,
+      "reportsTo": "Aspen"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Absolution Digital Commerce"
+    },
+    {
+      "name": "Absolution Studios"
+    },
+    {
+      "name": "Bellah Content Studio"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "name": "Absolution Studios",
+  "issuePrefix": "ABS",
+  "description": null,
+  "requireBoardApprovalForNewAgents": true,
+  "agents": [
+    {
+      "name": "Ergo",
+      "role": "ceo",
+      "title": "CEO / High-Orchestration Strategist",
+      "adapterType": "hermes_local",
+      "capabilities": null,
+      "reportsTo": null
+    },
+    {
+      "name": "Aider",
+      "role": "engineer",
+      "title": "Aider coding worker (process adapter)",
+      "adapterType": "process",
+      "capabilities": null,
+      "reportsTo": "Ergo"
+    },
+    {
+      "name": "OpenCode",
+      "role": "engineer",
+      "title": "Code Execution Specialist / OpenCode Runner",
+      "adapterType": "opencode_local",
+      "capabilities": null,
+      "reportsTo": "Ergo"
+    },
+    {
+      "name": "OpenDesign",
+      "role": "designer",
+      "title": "Design Execution Specialist / Prototype Builder",
+      "adapterType": "opencode_local",
+      "capabilities": null,
+      "reportsTo": "Ergo"
+    },
+    {
+      "name": "Proxy",
+      "role": "engineer",
+      "title": "Execution Specialist / Deep Builder",
+      "adapterType": "hermes_local",
+      "capabilities": null,
+      "reportsTo": "Ergo"
+    },
+    {
+      "name": "Romi",
+      "role": "designer",
+      "title": "Creative Director / Design Strategist",
+      "adapterType": "hermes_local",
+      "capabilities": null,
+      "reportsTo": "Ergo"
+    },
+    {
+      "name": "Trance",
+      "role": "designer",
+      "title": "Creative Director / Design Strategist",
+      "adapterType": "hermes_local",
+      "capabilities": null,
+      "reportsTo": "Ergo"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Slighe"
+    }
+  ]
+}
