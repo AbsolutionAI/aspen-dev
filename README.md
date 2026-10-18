@@ -33,7 +33,7 @@ aspen-dev is the **single source of truth** for:
 
 ```
 aspen-dev/
-├── paperclip/          # Company definitions & org charts
+├── paperclip/          # Company definitions & org charts (see paperclip/README.md)
 ├── hermes/             # Profiles, skills catalog references
 ├── ce-gates/           # Enforceable Compound Engineering gates
 ├── personas/           # Agent soul / personality definitions

@@ -1,4 +1,4 @@
-.PHONY: smoke docs-check
+.PHONY: smoke docs-check test
 docs-check:
 	@test -f README.md
 	@test -f ARCHITECTURE.md
@@ -17,3 +17,7 @@ smoke: docs-check
 	else \
 	  echo 'aspen-dev smoke ok'; \
 	fi
+
+# BEL-197: sanitized Paperclip company export + committed snapshot checks.
+test:
+	@python3 -m unittest discover -s tests -v
